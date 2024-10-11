@@ -21,11 +21,6 @@
     a.link_format:visited {color:inherit; text-decoration: underline;}
     a.link_format:hover {color:#0000ff; text-decoration: underline;}
     body {margin-top: 10px;}
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
     .footer {
       position: fixed;
       left: 0;
@@ -39,7 +34,10 @@
 <body>
   <div class="container">
     <h1 class="text-center">Table Join Cheat Sheet</h1><br>
-    <img src="Table Join SQL Spark Python.jpg" alt="cheat sheet for joining tables with sql spark and python pandas" class="center" style="max-width:100%;max-height:700px"><br>
+    <figure style="border: thin #c0c0c0 solid;max-width:100%;max-width:810px;display: block;margin-left: auto;margin-right: auto;">
+      <img src="Table Join SQL Spark Python.jpg" alt="cheat sheet for joining tables with sql spark and python pandas" style="max-width:100%">
+      <figcaption style="font-size: 0.7em;">Download: <a href="Table Join SQL Spark Python (high).jpg">High definition</a> | <a href="Table Join SQL Spark Python (high transparent).png">High def. w/ transparent background</a></figcaption>
+    </figure>
     <p>Imagine you want to analyze the data from a company. It could be a large multinational corporation, but it could also be just a small local pet shop. If the pet shop is organized, it will have a table on its internal system to list its customers, another one to list the pets, another one to list the purchases, and maybe others to list employees, expenses, stores, inventory, and so on.</p>
     <p>You can not analyze the tables separately. You need to join them with each other to find out things like "Do Labrador owners purchase more dog food than Pit Bull owners?" because the breed information is in the 'pet' table while the purchase information is in the 'purchase' table. So, eventually, you will need to merge the two tables into one. In this case, you would even have to use the 'customer' table to make the connection between 'pet' and 'purchase', because probably it's not the pet that is making the purchases, but its owner, who is a customer at the pet shop.</p>
     <p>There are multiple ways for you to join tables, depending on the desired outcome. Maybe you are only interested in the records that match both tables ("inner join"), or maybe you want to also have the records that belong to just one of them ("left join"), and so on. And there are also multiple software and languages for making that manipulation. Three of the most popular are SQL, Spark and Python pandas.</p>
@@ -47,7 +45,7 @@
     <p>This is hardly the only one online. For decades similar images have been used. This one, on the other hand, is the most complete because it has the cross join and all 3 languages syntaxes and is the most aesthetic (but maybe I'm biased because I created it).</p>
     <p>Save this image on your computer &#128187; or mobile &#128241;. Copy to wherever you want. Save this page on your favorite bookmark &#129505;. Only, if you are going to make money &#128176; out of it, please cut me in the deal.</p>
     <p>Enjoy!</p>
-    <br><br>
+    <br><br><br>
     <div class="footer bg-dark-subtle">
       Author: <a href="https://rafatro.github.io/site/" target="_blank"><b>Rafael Rodrigues Troiani</b></a>
     </div>
