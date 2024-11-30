@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Comparison of online calculators</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQH401M9MK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-MQH401M9MK");
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <meta name="keywords" content="statsig calculators,sample size calculators,statistical significance calculators,online calculators" />
+    <meta name="description" content="Comparison of online calculators of statistically significant tests and sample sizes, like A/B tests" />
+    <style>
+      a.link_format:link {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      a.link_format:visited {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      a.link_format:hover {
+        color: #0000ff;
+        text-decoration: underline;
+      }
+
+      body {
+        margin-top: 30px;
+        margin-bottom: 60px;
+      }
+
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding: 7px;
+        width: 100%;
+        text-align: right;
+      }
+
+      .table {
+        font-size: 0.7em;
+        text-align: center;
+      }
+
+      .legend_container {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .legend {
+        display: inline-block;
+        font-size: 0.7em;
+      }
+
+      .link_cell {
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center">Comparison of online stat. sig. calculators</h1>
+      <br />
+      <p>
+        Videos and training materials about testing often recommend you "use an online statistics calculator" to find the right <b>sample size</b> or to find out if the results from your test are <b>statistically significant</b> (rejects
+        the null hypothesis), but they never say which one or how to find and compare them. I, as a Business Analytics Manager, have also made the same mistake with my team of Business Analysts. It so happens to be <b>a lot</b> of online
+        calculators to help people with testing. And each one has peculiarities about what kind of test they help you perform or what premises they use under the hood.
+      </p>
+      <p>
+        It's hard to pick the best one, given they are so prolific and differ in purpose, inputs, and outputs. None of the ones I found are wrong, even if they give out different results, it's just because they consider different premises.
+        Nevertheless, it is noticeable that all of them were built with effort and care from the developers, who, no doubt, dedicated their time and energy to building something good and useful for others to enjoy. So, thank you, good
+        Samaritan developers.
+      </p>
+      <p>
+        To help testers, including my own Business Analyst team, navigate the abundant volume of online statistics calculators and build great tests, I put together this table below comparing the most popular (according to Google search)
+        online calculators that have to do with testing, sample sizing and statistical significance verification. I hope it helps you. Enjoy!
+      </p>
+      <table class="table table-sm align-middle table-hover">
+        <tr class="table-secondary">
+          <th colspan="2" rowspan="2">Calculator</th>
+          <th colspan="4">Supported types of test</th>
+          <th rowspan="2">Inputs<br />(user can set)</th>
+          <th rowspan="2">Premised<br />(user cannot set)</th>
+          <th rowspan="2">Output</th>
+        </tr>
+        <tr class="table-secondary">
+          <th style="text-wrap: nowrap">One sample<br />proportion</th>
+          <th style="text-wrap: nowrap">One sample<br />mean</th>
+          <th style="text-wrap: nowrap">
+            Two samples<br />
+            proportion
+          </th>
+          <th style="text-wrap: nowrap">
+            Two samples<br />
+            mean
+          </th>
+        </tr>
+        <tr>
+          <td><img src="samplesizecalculator.png" height="32" alt="samplesizecalculator.github.io logo" /></td>
+          <td class="link_cell"><a href="https://samplesizecalculator.github.io/" target="_blank">samplesizecalculator.github.io</a></td>
+          <td class="table-success">Yes</td>
+          <td class="table-success">Yes</td>
+          <td class="table-success">Yes</td>
+          <td class="table-success">Yes</td>
+          <td>
+            <img src="p.png" style="height: 0.9em" /> or ( <img src="bar_x.png" style="height: 0.9em" /> and <img src="sigma.png" style="height: 0.65em" />), CL, CI, <img src="r.png" style="height: 0.65em" />, tails according to the
+            selected type of test
+          </td>
+          <td><span style="text-decoration: line-through">power</span> but results for power=80% are shown in the details below the answer, pop &infin;</td>
+          <td><img src="n.png" style="height: 0.65em" /></td>
+        </tr>
+        <tr>
+          <td>infrrr</td>
+          <td class="link_cell"><a href="https://infrrr.com/">infrrr.com</a></td>
+          <td class="table-success">Yes</td>
+          <td class="table-success">Yes</td>
+          <td class="table-success">Yes</td>
+          <td class="table-success">Yes</td>
+          <td>
+            <img src="p.png" style="height: 0.9em" /> or ( <img src="bar_x.png" style="height: 0.9em" /> and <img src="sigma.png" style="height: 0.65em" />), <img src="mu.png" style="height: 0.9em" />, CL,
+            <img src="n.png" style="height: 0.65em" />, tails
+          </td>
+          <td><span style="text-decoration: line-through">power</span>, pop &infin;</td>
+          <td>hypothesis evaluation (says if it is statistically significant or not) with p-value</td>
+        </tr>
+
+        <tr>
+          <td><span style="background-color: #003459; color: #ffffff; font-family: serif">&nbsp;Statistics Kingdom&nbsp;</span></td>
+          <td class="link_cell"><a href="https://statskingdom.com/mean-tests.html">statskingdom.com/mean-tests.html</a></td>
+          <td class="table-success">Yes</td>
+          <td class="table-success">Yes</td>
+          <td class="table-success">Yes</td>
+          <td class="table-success">Yes</td>
+          <td>
+            <img src="p.png" style="height: 0.9em" /> or ( <img src="bar_x.png" style="height: 0.9em" /> and <img src="sigma.png" style="height: 0.65em" />), CL, CI, <img src="n.png" style="height: 0.65em" />, tails, choose between Z-test
+            (assumes normal distribution) or t-test (assumes student's t distribution)
+          </td>
+          <td>pop &infin;</td>
+          <td>hypothesis evaluation (says if it is statistically significant or not) with p-value and power</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><img src="abtestresult.png" height="32" alt="abtestresult.com logo" /></td>
+          <td class="link_cell"><a href="https://abtestresult.com/test-analysis">abtestresult.com/test-analysis</a></td>
+          <td>No</td>
+          <td>No</td>
+          <td class="table-success">Yes</td>
+          <td class="table-success">Yes</td>
+          <td>
+            <img src="p_1.png" style="height: 0.9em" /> and <img src="p_2.png" style="height: 0.9em" /> or ( <img src="bar_x_1.png" style="height: 1em" />, <img src="bar_x_2.png" style="height: 1em" />,
+            <img src="sigma_1.png" style="height: 0.8em" /> and <img src="sigma_2.png" style="height: 0.8em" />), <img src="n.png" style="height: 0.65em" />, CL, tails
+          </td>
+          <td><span style="text-decoration: line-through">power</span>, pop &infin;</td>
+          <td>hypothesis evaluation (says if it is statistically significant or not) with p-value and cool charts</td>
+        </tr>
+        <tr>
+          <td class="link_cell"><a href="https://abtestresult.com/sample-size-calculator">abtestresult.com/sample-size-calculator</a></td>
+          <td>No</td>
+          <td>No</td>
+          <td class="table-success">Yes</td>
+          <td class="table-success">Yes</td>
+          <td><img src="p.png" style="height: 0.9em" /> or ( <img src="bar_x.png" style="height: 0.9em" /> and <img src="sigma.png" style="height: 0.65em" />), CL, power, MDE, tails</td>
+          <td>groups have the same size, pop &infin;</td>
+          <td><img src="n.png" style="height: 0.65em" /></td>
+        </tr>
+        <tr>
+          <td rowspan="7"><img src="sample-size-net.svg" height="32" alt="sample-size.net logo" /></td>
+          <td class="link_cell"><a href="https://sample-size.net/confidence-interval-proportion/">sample-size.net/confidence-interval-proportion</a></td>
+          <td class="table-success">Yes</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td><img src="p.png" style="height: 0.9em" />, CL, <img src="n.png" style="height: 0.65em" /></td>
+          <td><span style="text-decoration: line-through">power</span>, two-tails</td>
+          <td>CI</td>
+        </tr>
+        <tr>
+          <td class="link_cell"><a href="https://sample-size.net/sample-size-conf-interval-proportion/">sample-size.net/sample-size-conf-interval-proportion</a></td>
+          <td class="table-success">Yes</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td><img src="p.png" style="height: 0.9em" />, CL, pop, MDE</td>
+          <td><span style="text-decoration: line-through">power</span>, two-tails</td>
+          <td><img src="n.png" style="height: 0.65em" /></td>
+        </tr>
+        <tr>
+          <td class="link_cell"><a href="https://sample-size.net/confidence-interval-mean/">sample-size.net/confidence-interval-mean</a></td>
+          <td>No</td>
+          <td class="table-success">Yes</td>
+          <td>No</td>
+          <td>No</td>
+          <td><img src="bar_x.png" style="height: 0.9em" />, <img src="sigma.png" style="height: 0.65em" />, CL, <img src="n.png" style="height: 0.65em" /></td>
+          <td><span style="text-decoration: line-through">power</span>, two-tails</td>
+          <td>CI</td>
+        </tr>
+        <tr>
+          <td class="link_cell"><a href="https://sample-size.net/proportions-effect-size/">sample-size.net/proportions-effect-size</a></td>
+          <td>No</td>
+          <td>No</td>
+          <td class="table-success">Yes</td>
+          <td>No</td>
+          <td><img src="p_1.png" style="height: 0.9em" />, CL, power, <img src="n_1.png" style="height: 0.8em" />, <img src="n_2.png" style="height: 0.8em" />, left or right tail</td>
+          <td>one-tail, pop &infin;</td>
+          <td><img src="p_2.png" style="height: 0.9em" /></td>
+        </tr>
+        <tr>
+          <td class="link_cell"><a href="https://sample-size.net/sample-size-proportions/">sample-size.net/sample-size-proportions</a></td>
+          <td>No</td>
+          <td>No</td>
+          <td class="table-success">Yes</td>
+          <td>No</td>
+          <td><img src="p_1.png" style="height: 0.9em" />, <img src="p_2.png" style="height: 0.9em" />, CL, power, <img src="r.png" style="height: 0.65em" /></td>
+          <td>two-tails, pop &infin;</td>
+          <td><img src="n.png" style="height: 0.65em" /></td>
+        </tr>
+        <tr>
+          <td class="link_cell"><a href="https://sample-size.net/means-effect-size/">sample-size.net/means-effect-size</a></td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td class="table-success">Yes</td>
+          <td><img src="sigma.png" style="height: 0.65em" />, CL, power, <img src="n_1.png" style="height: 0.8em" />, <img src="n_2.png" style="height: 0.8em" /></td>
+          <td>two-tails, pop &infin;</td>
+          <td>CI</td>
+        </tr>
+        <tr>
+          <td class="link_cell"><a href="https://sample-size.net/sample-size-means/">sample-size.net/sample-size-means</a></td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td class="table-success">Yes</td>
+          <td><img src="sigma.png" style="height: 0.65em" />, CL, power, <img src="r.png" style="height: 0.65em" /></td>
+          <td>two-tails, pop &infin;</td>
+          <td><img src="n.png" style="height: 0.65em" /></td>
+        </tr>
+        <tr>
+          <td rowspan="3"><img src="365DataScience.png" width="64" alt="365datascience.com logo" /></td>
+          <td class="link_cell"><a href="https://365datascience.com/calculators/confidence-interval-calculator/">365datascience.com/calculators/confidence-interval-calculator</a></td>
+          <td>No</td>
+          <td class="table-success">Yes</td>
+          <td>No</td>
+          <td>No</td>
+          <td><img src="bar_x.png" style="height: 0.9em" />, <img src="sigma.png" style="height: 0.65em" />, CL, <img src="n.png" style="height: 0.65em" /></td>
+          <td><span style="text-decoration: line-through">power</span>, two-tails</td>
+          <td>CI</td>
+        </tr>
+        <tr>
+          <td class="link_cell"><a href="https://365datascience.com/calculators/hypothesis-test-calculator/">365datascience.com/calculators/hypothesis-test-calculator</a></td>
+          <td>No</td>
+          <td class="table-success">Yes</td>
+          <td>No</td>
+          <td>No</td>
+          <td><img src="bar_x.png" style="height: 0.9em" />, <img src="sigma.png" style="height: 0.65em" />, <img src="mu.png" style="height: 0.9em" />, CL, <img src="n.png" style="height: 0.65em" />, tails</td>
+          <td><span style="text-decoration: line-through">power</span></td>
+          <td>hypothesis evaluation (says if it is statistically significant or not) with p-value</td>
+        </tr>
+        <tr>
+          <td class="link_cell"><a href="https://365datascience.com/calculators/difference-in-means-calculator/">365datascience.com/calculators/difference-in-means-calculator</a></td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td class="table-success">Yes</td>
+          <td>
+            <img src="bar_x_1.png" style="height: 1em" />, <img src="bar_x_2.png" style="height: 1em" />, <img src="sigma_1.png" style="height: 0.8em" />, <img src="sigma_2.png" style="height: 0.8em" />, CL,
+            <img src="n.png" style="height: 0.65em" />, tails, choose between dependent and independent samples, choose between equal or unequal variances
+          </td>
+          <td><span style="text-decoration: line-through">power</span></td>
+          <td>hypothesis evaluation (says if it is statistically significant or not) with p-value</td>
+        </tr>
+        <tr>
+          <td><img src="Bookingcom.png" height="32" alt="bookingcom.github.io/powercalculator logo" /></td>
+          <td class="link_cell"><a href="https://bookingcom.github.io/powercalculator/">bookingcom.github.io/powercalculator/</a></td>
+          <td>No</td>
+          <td>No</td>
+          <td class="table-success">Yes</td>
+          <td class="table-success">Yes</td>
+          <td>
+            <img src="p.png" style="height: 0.9em" /> or ( <img src="bar_x.png" style="height: 0.9em" /> and <img src="sigma.png" style="height: 0.65em" />), CL, power, MDE (to output <img src="n.png" style="height: 0.65em" />),
+            <img src="n.png" style="height: 0.65em" /> (to output MDE), tails
+          </td>
+          <td>groups have the same size, pop &infin;</td>
+          <td><img src="n.png" style="height: 0.65em" /> or MDE</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><img src="calculator-net.png" height="32" alt="calculator.net logo" /></td>
+          <td class="link_cell"><a href="https://www.calculator.net/sample-size-calculator.html/">calculator.net/sample-size-calculator.html</a></td>
+          <td class="table-success">Yes</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td><img src="p.png" style="height: 0.9em" />, CL, pop, MDE (to output <img src="n.png" style="height: 0.65em" />), <img src="n.png" style="height: 0.65em" /> (to output MDE)</td>
+          <td><span style="text-decoration: line-through">power</span>, two-tails</td>
+          <td><img src="n.png" style="height: 0.65em" /> or MDE</td>
+        </tr>
+        <tr>
+          <td class="link_cell"><a href="https://www.calculator.net/confidence-interval-calculator.html/">calculator.net/confidence-interval-calculator.html</a></td>
+          <td>No</td>
+          <td class="table-success">Yes</td>
+          <td>No</td>
+          <td>No</td>
+          <td><img src="bar_x.png" style="height: 0.9em" />, <img src="sigma.png" style="height: 0.65em" />, CL, <img src="n.png" style="height: 0.65em" /></td>
+          <td><span style="text-decoration: line-through">power</span>, two-tails, pop &infin;</td>
+          <td>CI</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><img src="abtestguide.png" height="32" alt="abtestguide.com logo" /></td>
+          <td class="link_cell"><a href="https://abtestguide.com/calc/">abtestguide.com/calc</a></td>
+          <td>No</td>
+          <td>No</td>
+          <td class="table-success">Yes</td>
+          <td>No</td>
+          <td><img src="p_1.png" style="height: 0.9em" />, <img src="p_2.png" style="height: 0.9em" />, <img src="n_1.png" style="height: 0.8em" />, <img src="n_2.png" style="height: 0.8em" />, CL, tails</td>
+          <td>pop &infin;</td>
+          <td>hypothesis evaluation (says if it is statistically significant or not) with p-value and power</td>
+        </tr>
+        <tr>
+          <td class="link_cell"><a href="https://abtestguide.com/abtestsize/">abtestguide.com/abtestsize</a></td>
+          <td>No</td>
+          <td>No</td>
+          <td class="table-success">Yes</td>
+          <td>No</td>
+          <td><img src="p.png" style="height: 0.9em" />, CL, power MDE, tails</td>
+          <td>pop &infin;</td>
+          <td><img src="n.png" style="height: 0.65em" /></td>
+        </tr>
+        <tr>
+          <td>
+            <img src="SurveyMonkey.png" height="24" alt="surveymonkey.com logo" />
+            <img src="questionpro.png" height="24" alt="questionpro.com logo" />
+            <img src="qualtrics.svg" height="24" alt="qualtrics.com logo" />
+          </td>
+          <td class="link_cell">
+            <a href="https://www.surveymonkey.com/mp/sample-size-calculator/">surveymonkey.com/mp/sample-size-calculator</a><br />
+            <a href="https://www.questionpro.com/sample-size-calculator/">questionpro.com/sample-size-calculator</a><br />
+            <a href="https://www.qualtrics.com/blog/calculating-sample-size/">qualtrics.com/blog/calculating-sample-size</a>
+          </td>
+          <td class="table-success">Yes</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td>CL, pop, MDE</td>
+          <td><img src="p.png" style="height: 0.9em" />=50%, <span style="text-decoration: line-through">power</span>, two-tails</td>
+          <td><img src="n.png" style="height: 0.65em" /></td>
+        </tr>
+        <tr>
+          <td>
+            <img src="raosoft.gif" height="24" alt="raosoft.com logo" />
+            <img src="select-statistics.png" height="24" alt="select-statistics.co.uk logo" />
+          </td>
+          <td class="link_cell">
+            <a href="http://www.raosoft.com/samplesize.html">raosoft.com/samplesize.html</a><br />
+            <a href="https://select-statistics.co.uk/calculators/sample-size-calculator-population-proportion/">select-statistics.co.uk/calculators/sample-size-calculator-population-proportion</a>
+          </td>
+          <td class="table-success">Yes</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td><img src="p.png" style="height: 0.9em" />, CL, pop, MDE</td>
+          <td><span style="text-decoration: line-through">power</span>, two-tails</td>
+          <td><img src="n.png" style="height: 0.65em" /></td>
+        </tr>
+      </table>
+      <div class="legend_container">
+        <div class="legend">
+          <b>Legend:</b><br />
+          &bull; <img src="p.png" style="height: 0.9em" /> proportion, or rate that is being measured in the test.<br />
+          &bull; <img src="bar_x.png" style="height: 0.9em" /> average of a continuous variable that is being measured in the test.<br />
+          &bull; <img src="sigma.png" style="height: 0.65em" /> standard deviation of the continuous variable.<br />
+          &bull; p-value probability of obtaining the observed results when the null hypothesis is true.<br />
+          &bull; CL Confidence Level (usually 95%), complementary to the minimum acceptable p-value &alpha;.<br />
+          &bull; CI Confidence Interval, the accepted precision around the measured metric.<br />
+          &bull; MDE Minimum Detectable Effect is another way to refer to the accepted precision around the measured metric.<br />
+          &bull; <img src="n.png" style="height: 0.65em" /> sample size (or sample sizes).<br />
+          &bull; <img src="r.png" style="height: 0.65em" /> ratio between the sizes of the two samples.<br />
+          &bull; tails represent if the test has one (non-inferiority or superiority) or two (difference either larger or smaller) tails.<br />
+          &bull; power is the statistical power of the test, related to the risk of rejecting the null hypothesis when it's true.<br />
+          &bull; <span style="text-decoration: line-through">power</span> means the calculator does not consider any special treatment for guaranteeing a certain power level.<br />
+          &bull; "pop" size of the total population being targeted by the test (not only the sampled observations)<br />
+          &bull; "pop &infin;" means the calculator considers the population to be large enough not to matter to the test.<br />
+          &bull; <img src="mu.png" style="height: 0.9em" /> population mean.<br />
+        </div>
+      </div>
+    </div>
+    <div class="footer bg-dark-subtle">
+      Author: <a href="https://rafatro.github.io" target="_blank"><b>Rafael Rodrigues Troiani</b></a>
+    </div>
+  </body>
+</html>
